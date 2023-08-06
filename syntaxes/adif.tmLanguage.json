@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ADIF",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#end-of-header"
+		},
+		{
+			"include": "#end-of-row"
+		},
+		{
+			"include": "#fields"
+		},
+		{
+			"include": "#header"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"match": "^[^\\<].*",
+				"name": "comment.line.adif"
+			}]
+		},
+
+		"end-of-header": {
+			"patterns": [{
+				"match": "(?i)<EOH>",
+				"name": "storage"
+			}]
+		},
+		"end-of-row": {
+			"patterns": [{
+				"match": "(?i)<EOR>",
+				"name": "storage"
+			}]
+		},
+		"header": {
+			"patterns": [{
+				"match": "(?i:(ADIF_VER|CREATED_TIMESTAMP|PROGRAMID|PROGRAMVERSION|USERDEF\\d*))",
+				"name": "entity.name"
+			}]
+		},
+		"fields": {
+			"match": "(<)(.+?)(:+?)([0-9]+)(:+?)?([a-zA-Z])?(>?)(.+?)+?",
+			"captures":  {
+				"1":  { "name": "string" },
+				"2":  { "name": "keyword" },
+				"3":  { "name": "string" },
+				"4":  { "name": "meta" },
+				"5":  { "name": "string" },
+				"6":  { "name": "constant" },
+				"7":  { "name": "string" },
+				"8":  { "name": "variable" }
+			 }
+		}
+	},
+	"scopeName": "source.adif"
+}
