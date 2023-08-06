@@ -8,13 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Checkout
-        uses: actions/checkout@v2
-
-      -name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
+      uses: actions/checkout@v3
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
 
       - name: Install dependencies
         run: npm install
@@ -27,7 +24,7 @@ jobs:
 
       - name: Artifact
         if: success()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           path: "*.vsix"
 
