@@ -5,8 +5,8 @@
   "publisher": "filipjonckers",
   "icon": "icon.png",
   "pricing": "Free",
-  "version": "1.0.1",
-  "repository": "https://github.com/filipjonckers/adif-syntax-highlighting",
+  "version": "1.0.3",
+  "repository": "https://github.com/filipjonckers/adif-syntax-highlighting-vscode",
   "engines": {
     "vscode": "^1.30.0"
   },

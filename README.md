@@ -54,11 +54,19 @@ None at this time.
 
 ## Release Notes
 
+### 1.0.3
+
+Correct link to GitHub repository.
+
 ### 1.0.1
 
 Initial release of ADIF file syntax highlighting extension for Visual Studio Code.
 
+## Support and bug reports
+
+Please report any issues via the GitHub repository.  Also any contributions are much appreciated.
+
 ## For more information
 
 * [ADIF file format specifications](https://www.adif.org/)
-* [Information on publishing a VSC extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
+* [GitHub repository](https://github.com/filipjonckers/adif-syntax-highlighting-vscode)
