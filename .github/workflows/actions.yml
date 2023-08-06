@@ -33,6 +33,6 @@ jobs:
     needs: build
     if: success()
     steps:
+    - uses: actions/download-artifact@v3
     - name: Publish
-      uses: actions/download-artifact@v2
       run: vsce publish -p ${{ secrets.VSCE_PAT }}
