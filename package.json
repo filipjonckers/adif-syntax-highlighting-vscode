@@ -2,7 +2,7 @@
   "name": "adif-syntax-highlighting",
   "displayName": "ADIF Syntax Highlighting",
   "description": "ADIF radio amateur log files syntax highlighting support",
-  "publisher": "Filip Jonckers",
+  "publisher": "filipjonckers",
   "icon": "icon.png",
   "pricing": "Free",
   "version": "1.0.1",
