@@ -1,0 +1,23 @@
+ADIF Export from RumLogNG by DL2RUM
+For further info visit: https://www.dl2rum.de
+
+Note: extension must support both single and multiline records as shown below
+
+<ADIF_VER:5:s>3.1.4
+<PROGRAMID:8>RUMlogNG
+<PROGRAMVERSION:6>5.12.2
+<USERDEF:8>12345678
+<USERDEF1:10>1234567890
+<USERDEF10:10>1234567890
+<EOH>
+
+<call:5>ON4FF
+<band:3:>20m
+<freq:6>14.200
+<mode:3>SSB
+<qso_date:8>20230831
+<time_on:6>100553
+<EOR>
+
+<call:6>ON1AFN <band:2:>2m  <freq:7>144.550 <mode:2>FM <qso_date:8>20230831 <time_on:6>100553 <EOR>
+<call:5>ON4FF  <band:3:>10m <freq:6>28.056  <mode:2>CW <qso_date:8>20230831 <time_on:6>100553 <EOR>
